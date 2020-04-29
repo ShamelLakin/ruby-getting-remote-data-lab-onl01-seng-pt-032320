@@ -20,8 +20,6 @@ class GetRequester
     req["results"]
     end
   end
-  requests = GetRequester.new
-requests.parse_json
 end 
 
 
