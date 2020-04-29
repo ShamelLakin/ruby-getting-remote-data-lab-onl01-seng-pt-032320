@@ -19,7 +19,9 @@ class GetRequester
     requests.collect do |req|
     req["results"]
     end
-  end 
+  end
+  requests = GetRequester.new
+requests.parse_json
 end 
 
-requests = GetRequester.new
+
