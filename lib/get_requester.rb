@@ -23,4 +23,3 @@ class GetRequester
 end 
 
 requests = GetRequester.new
-return requests.parse_json
