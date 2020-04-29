@@ -21,3 +21,6 @@ class GetRequester
     end
   end 
 end 
+
+requests = GetRequester.new
+puts requests.program_school.uniq
