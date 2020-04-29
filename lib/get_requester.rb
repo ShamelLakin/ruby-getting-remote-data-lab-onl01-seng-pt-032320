@@ -17,10 +17,11 @@ class GetRequester
   
   def parse_json
     requests = JSON.parse(self.get_response_body)
-    requests.collect do |req|
-    req["results"]
-    binding.pry
-    end
+    requests
+    # .collect do |req|
+    # req["results"]
+    # binding.pry
+    # end
   end
 end 
 
