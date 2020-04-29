@@ -23,4 +23,4 @@ class GetRequester
 end 
 
 requests = GetRequester.new
-puts requests.program_school.uniq
+requests.parse_json
