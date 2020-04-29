@@ -1,6 +1,7 @@
 require 'open-uri'
 require 'net/http'
 require 'json'
+require 'pry'
 
 class GetRequester
   
@@ -18,6 +19,7 @@ class GetRequester
     requests = JSON.parse(self.get_response_body)
     requests.collect do |req|
     req["results"]
+    binding.pry
     end
   end
 end 
